@@ -1,0 +1,27 @@
+{
+  "name": "Tifawin",
+  "displayName": "tifawin",
+  "expo": {
+    "name": "Tifawin",
+    "slug": "tifawin",
+    "icon": "./app/assets/images/appname.jpg",
+    "jsEngine": "jsc",
+    "android": {
+      "package": "me.apps.tifawin"
+    },
+    "splash": {
+      "image": "./app/assets/images/splashscreen_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "me.apps.tifawin"
+    },
+    "owner": "heroura",
+    "plugins": [],
+    "extra": {
+      "eas": {
+      }
+    }
+  }
+}

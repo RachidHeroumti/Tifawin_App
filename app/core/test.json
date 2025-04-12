@@ -1,0 +1,160 @@
+{
+    "cart": {
+        "cart": []
+    },
+    "currencySaver": {
+        "currency": {
+            "code": "xof",
+            "default": true,
+            "name": "Mxof",
+            "symbol": "XOF"
+        }
+    },
+    "drawer": {
+        "isOpen": false
+    },
+    "filterTrack": {
+        "brands": [],
+        "colors": [],
+        "priceRange": {
+            "max": 10000,
+            "min": 0
+        },
+        "sizes": []
+    },
+    "languageTracker": {
+        "language": "EN",
+        "translations": {
+            "account_settings": "Account Settings",
+            "add_cart": "Add Product to your cart and shop now.",
+            "add_favorite": "Add Product to your favourite and shop now.",
+            "add_to_cart": "Add To Cart",
+            "all": "All",
+            "all_categories": "All Categories",
+            "already_have_account": "Already have an account?",
+            "back_to_home": "Back to Home",
+            "bestProduct": "Featured Products",
+            "brands": "Brands",
+            "buy_now": "Buy Now",
+            "cart_empty": "Your shopping cart is 
+Empty!", "categories": "Categories", "chat": "Chat", "clear_all": "Clear All", "close": "Close", "collections": "Collection", "comming_soon": "Comming Soon", "completed": "Completed", "components": "Components", "confirm_password": "Confirm Password", "create_account": "Create your account", "days_return": " Days return available", "description": "Description", "discover_more": "Discover More", "edit_profile": "Edit Profile", "email": "Email", "filter": "FILTER", "firstname": "First Name", "forget_password": "Forget Password", "hello": "Hello, how are you?", "home": "Home", "home_decor": "Home Decor & Furnishings", "in_stock": "In Stock", "lastname": "Last Nmae", "logout": "Logout", "mobilenumber": "Mobile Number", "my_cart": "My Cart", "my_orders": "My Orders", "my_wishlist": "My Wishlist", "not_member": "Not a member?", "notification": "Notification", "notification_settings": "Notification Settings", "ongoing": "Ongoing", "order_placed": "Your order has been placed successfully.", "out_of_stock": "Out of stock", "password": "Password", "process_to_buy": "Process To Buy", "product_details": "Product Details", "product_page_title": "Product Grid", "products": "Products", "profile": "Profile", "remove": "Remove", "review": "Review", "save": "Save", "search_items": "Search Best items for You", "select_language": "Select Language", "select_variant": "Select Variant", "shop_cart": "Shop Cart", "shop_now": "Shop Now", "sign_in": "Sign In", "sign_in_to_account": "Sign in to your account", "sign_up": "Sign Up", "similar_products": "Similar Products", "skip": "Skip", "sort": "SORT", "thank_you": "🎉 Thank You! 🎉", "total": "Total", "track_order": "Track Order", "welcome": "Welcome", "welcome_back": "Welcome back! Please enter your details", "welcome_back_missed": "Welcome Back! You've Been Missed!",
+            "wishlist": "Wishlist",
+            "wishlist_empty": "Your Wishlist is Empty!",
+            "write_review": "Write Review"
+        }
+    },
+    "orderHolder": {},
+    "producReducer": {
+        "_id": "67b9892fbf05727a0b67855c",
+        "brand": {
+            "_id": "67b6e368bf05727a0b678083",
+            "name": "Alfa Romeo",
+            "slug": "alfa-romeo"
+        },
+        "collections": [],
+        "createdAt": "2025-02-22T08:22:07.720Z",
+        "currencies": [],
+        "description": "description",
+        "files": [],
+        "html": "<p></p>",
+        "images": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "model": "1999",
+        "name": "Product AAA",
+        "options": [],
+        "outStock": {
+            "disabled": true,
+            "hide": false
+        },
+        "price": {
+            "buyingPrice": 0,
+            "comparePrice": 200,
+            "salePrice": 124
+        },
+        "productType": "PHYSICAL",
+        "quantity": {
+            "default": 1,
+            "increment": 1,
+            "instock": 10000,
+            "min": 1,
+            "transporting": 0,
+            "unit": ""
+        },
+        "reference": "P1740212527715",
+        "review": {
+            "rating": 0,
+            "reviews": [Array
+            ]
+        },
+        "seo": {
+            "hide": false,
+            "keywords": [Array
+            ]
+        },
+        "shipping": {
+            "active": false,
+            "price": 0,
+            "zones": [Array
+            ]
+        },
+        "sizes": {
+            "dimensions": [Object
+            ],
+            "volume": [Object
+            ],
+            "weight": [Object
+            ]
+        },
+        "slug": "product-aaa",
+        "source": "owner",
+        "status": "DRAFT",
+        "storeId": "67b4a26cbb4e7dd372021820",
+        "tags": [],
+        "translates": [],
+        "type": "simple",
+        "user": {
+            "_id": "66f5370f7989939dc335775b",
+            "firstname": "rachid",
+            "lastname": "heroumti0",
+            "whoIs": "admin"
+        },
+        "variants": []
+    },
+    "productDetails": {
+        "id": ""
+    },
+    "searchTrack": {
+        "text": ""
+    },
+    "settings": {},
+    "sortTrack": {
+        "name": "",
+        "q": 0,
+        "type": ""
+    },
+    "toBuyTracker": {
+        "id": "",
+        "price": 0,
+        "quantity": 0,
+        "upsell": {
+            "_id": "",
+            "discount": [Object
+            ],
+            "name": "",
+            "product": [Object
+            ]
+        },
+        "variant": {
+            "_id": ""
+        }
+    },
+    "wishList": {
+        "wishList": []
+    }
+}
