@@ -33,9 +33,6 @@ type Props = {
 
 const Header = ({title, leftIcon, leftAction,transparent,productId,titleLeft,titleLeft2,titleRight,rightIcon1,rightIcon2,rightIcon3} : Props) => {
 
-    const wishList = useSelector((state:any) => state.wishList.wishList);
-
-    const cart = useSelector((state:any) => state.cart.cart);
 
     const theme = useTheme();
     const { colors } : {colors : any} = theme;
@@ -90,33 +87,7 @@ const Header = ({title, leftIcon, leftAction,transparent,productId,titleLeft,tit
                             <FeatherIcon size={22} color={COLORS.title} name={'search'} />
                         </TouchableOpacity>
                     }
-                    {rightIcon3  &&
-                        <View
-                            //onPress={() => leftAction ? leftAction() : navigation.goBack()}
-                            style={[styles.actionBtn,{}]}
-                        >
-                                <FontAwesome size={18} color={COLORS.title} name={'heart'} />
-                                <View style={[GlobalStyleSheet.notification, { position: 'absolute', right: 0, bottom: 18,backgroundColor:COLORS.danger }]}>
-                                    <Text style={{ ...FONTS.fontRegular, fontSize: 12, color:COLORS.card }}>{wishList.length}</Text>
-                                </View>
-                        </View>
-                    }
-                    {rightIcon2 == "cart" &&
-                        <TouchableOpacity
-                            activeOpacity={0.5} 
-                            onPress={() => navigation.navigate('MyCart')}
-                            style={[styles.actionBtn,{marginLeft:10}]}
-                        >
-                            {/* <Image
-                                style={{height:20,width:20,tintColor:COLORS.title}}
-                                source={IMAGES.mycart}
-                            /> */}
-                            <FontAwesome size={20} color={COLORS.title} name={'shopping-cart'} />
-                            <View style={[GlobalStyleSheet.notification, { position: 'absolute', right: 0, bottom: 20,backgroundColor:COLORS.danger }]}>
-                                <Text style={{ ...FONTS.fontRegular, fontSize: 10, color:COLORS.card }}>{cart.length}</Text>
-                            </View>
-                        </TouchableOpacity>
-                    }
+                   
                 </View>
         </LinearGradient>
     )

@@ -19,11 +19,10 @@ import {
 } from 'react-native-responsive-screen';
 
 
-const home  = require('../assets/images/icons/home.png');
-const wallet  = require('../assets/images/icons/wallet.png');
-const profile  = require('../assets/images/icons/user.png');
-const products  = require('../assets/images/icons/producta.png');
-const orders  = require('../assets/images/icons/order.png');
+const home = require('../assets/images/icons/home.png');
+const profile = require('../assets/images/icons/settings.png');
+const article = require('../assets/images/icons/blog.png');
+const cooperative = require('../assets/images/icons/order.png');
 
 type Props = {
     state : any,
@@ -38,7 +37,7 @@ const CustomNavigation = ({state, navigation, descriptors}: Props) => {
     
     const [tabWidth, setWidth] = useState(wp('100%'));
     
- const  TABS_NUMBER=2 ;
+ const  TABS_NUMBER=4 ;
 
     const tabWD =
         tabWidth < SIZES.container ? (tabWidth - 20) / TABS_NUMBER : SIZES.container / TABS_NUMBER;
@@ -71,7 +70,7 @@ const CustomNavigation = ({state, navigation, descriptors}: Props) => {
             right:10,
             bottom:10,
             borderRadius: 20,
-            shadowColor: "rgba(0,0,0,.6)",
+            shadowColor: COLORS.primary,
             shadowOffset: {
                 width: 0,
                 height: 4,
@@ -179,12 +178,19 @@ const CustomNavigation = ({state, navigation, descriptors}: Props) => {
                                             marginBottom:10,
                                             marginLeft:3,
                                             opacity:isFocused ? 1 : .6,
-                                            tintColor:isFocused ? colors.title : colors.text,
+                                            tintColor:isFocused ? COLORS.primary : colors.text,
                                         }}
                                         source={
-                                            label === 'Home'    ?  home:
-                                            label === 'Profile'  ?  profile : IMAGES.Home
-                                        }
+                                            label === 'Home'
+                                              ? home
+                                              : label === 'Cooperative'
+                                              ? cooperative
+                                              : label === 'Article'
+                                              ? article
+                                              : label === 'Profile'
+                                              ? profile
+                                              : home
+                                          }
                                     />
                                 </Animated.View>
                             </TouchableOpacity>

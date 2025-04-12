@@ -14,6 +14,9 @@ import DrawerNavigation from './DrawerNavigation';
 import {useDispatch, useSelector} from 'react-redux';
 import FisrtPage from '../screens/Home/FirstPage';
 import Article from '../screens/Articles/Article';
+import Cooperative from '../screens/Cooperatives/Cooperative';
+import Questions from '../screens/Cooperatives/Questions';
+import Resultat from '../screens/Cooperatives/Resultat';
 
 
 
@@ -41,6 +44,10 @@ const StackNavigator = () => {
         <Stack.Screen name="DrawerNavigation" component={DrawerNavigation} />
         <Stack.Screen name="FirstPage" component={FisrtPage} />
         <Stack.Screen name="Article" component={Article} />
+        <Stack.Screen name="Cooperative" component={Cooperative} />
+        <Stack.Screen name="Questions" component={Questions} />
+        <Stack.Screen name="Resultat" component={Resultat} />
+       
         
       </Stack.Navigator>
     </View>

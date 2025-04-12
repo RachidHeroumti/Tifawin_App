@@ -4,67 +4,47 @@ import { useTheme } from '@react-navigation/native';
 import { COLORS, SIZES } from '../../constants/theme';
 
 const BasicPieChart = () => {
+  const { colors } = useTheme();
 
-  const {colors} = useTheme();
+  const data = [
+    {
+      name: "D. Marketing digital",
+      population: 2100000,
+      color: "#1B5E20", // Dark Forest Green
+      legendFontColor: colors.text,
+      legendFontSize: 12
+    },
+    {
+      name: "D. strategique",
+      population: 2800000,
+      color: "#4CAF50", // Medium Green
+      legendFontColor: colors.text,
+      legendFontSize: 12
+    },
+    {
+      name: "Diagnostic operationnel",
+      population: 4027612,
+      color: "#A5D6A7", // Light Pale Green
+      legendFontColor: colors.text,
+      legendFontSize: 12
+    }
+  ];
 
-    const data = [
-        {
-          name: "Seoul",
-          population: 21500000,
-          color: "#945fcb",
-          legendFontColor: colors.text,
-          legendFontSize: 12
-        },
-        {
-          name: "Toronto",
-          population: 2800000,
-          color: "#f74587",
-          legendFontColor: colors.text,
-          legendFontSize: 12
-        },
-        {
-          name: "Beijing",
-          population: 5827612,
-          color: "#dedef5",
-          legendFontColor: colors.text,
-          legendFontSize: 12
-        },
-        {
-          name: "New York",
-          population: 8538000,
-          color: "#111111",
-          legendFontColor: colors.text,
-          legendFontSize: 12
-        },
-        {
-          name: "Moscow",
-          population: 11920000,
-          color: "#6c2da7",
-          legendFontColor: colors.text,
-          legendFontSize: 12
-        }
-    ];
-
-    return (
-        <>
-            <PieChart
-                data={data}
-                width={SIZES.width - 60}
-                height={200}
-                chartConfig={{
-                    color: () =>  '#5384d7',
-                    labelColor: () => colors.text,
-                    backgroundColor:'#fff'
-                }}
-                accessor={"population"}
-                backgroundColor='#fff'
-                paddingLeft={"0"}
-                center={[10, 6]}
-            />
-        </>
-    );
+  return (
+    <PieChart
+      data={data}
+      width={SIZES.width - 60}
+      height={200}
+      chartConfig={{
+        color: () => '#4CAF50', // Matches the medium green for consistency
+        labelColor: () => colors.text,
+      }}
+      accessor={"population"}
+      backgroundColor={"transparent"}
+      paddingLeft={"0"}
+      center={[10, 6]}
+    />
+  );
 };
-
-
 
 export default BasicPieChart;
