@@ -11,11 +11,9 @@ import SignUp from '../screens/Auth/SignUp';
 import SingIn from '../screens/Auth/SingIn';
 import BottomNavigation from './BottomNavigation';
 import DrawerNavigation from './DrawerNavigation';
-import {post} from '../core/http';
 import {useDispatch, useSelector} from 'react-redux';
-import {setSettings} from '../redux/reducer/settingReducer';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import FisrtPage from '../screens/Home/FirstPage';
+import Article from '../screens/Articles/Article';
 
 
 
@@ -30,7 +28,7 @@ const StackNavigator = () => {
   return (
     <View style={{width: '100%', flex: 1}}>
       <Stack.Navigator
-        initialRouteName="DrawerNavigation"
+        initialRouteName="FirstPage"
         screenOptions={{
           headerShown: false,
           cardStyle: {backgroundColor: 'transparent'},
@@ -41,6 +39,8 @@ const StackNavigator = () => {
         <Stack.Screen name="SingIn" component={SingIn} />
         <Stack.Screen name="BottomNavigation" component={BottomNavigation} />
         <Stack.Screen name="DrawerNavigation" component={DrawerNavigation} />
+        <Stack.Screen name="FirstPage" component={FisrtPage} />
+        <Stack.Screen name="Article" component={Article} />
         
       </Stack.Navigator>
     </View>

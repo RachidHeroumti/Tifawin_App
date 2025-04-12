@@ -1,6 +1,11 @@
 export const IMAGES = {
-    
-
+    img0: require('../assets/images/myimg/illustration.png'),
+    img1: require('../assets/images/myimg/azzulassets.png'),
+    m1: require('../assets/images/myimg/m1.jpg'),
+    m2: require('../assets/images/myimg/m2.jpg'),
+    m3: require('../assets/images/myimg/m3.jpg'),
+    m4: require('../assets/images/myimg/m4.jpg'),
+  
     appname : require('../assets/images/appname.jpg'),
     appnamedark : require('../assets/images/appname-dark.jpg'),
     google2 : require('../assets/images/icons/google2.png'),

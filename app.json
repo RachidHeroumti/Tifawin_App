@@ -4,13 +4,13 @@
   "expo": {
     "name": "Tifawin",
     "slug": "tifawin",
-    "icon": "./app/assets/images/appname.jpg",
+    "icon": "./app/assets/images/logo.png",
     "jsEngine": "jsc",
     "android": {
       "package": "me.apps.tifawin"
     },
     "splash": {
-      "image": "./app/assets/images/splashscreen_logo.png",
+      "image": "./app/assets/images/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

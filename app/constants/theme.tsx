@@ -2,9 +2,9 @@ import { Dimensions } from "react-native";
 const {width,height} = Dimensions.get('screen');
 
 export const COLORS = {
-	primary: "#091e44",
+	primary: "#1aa79e",
 	primaryLight: "rgba(253,152,0,0.15)",
-	secondary: "#FFD600",
+	secondary: "#1b1b1b",
 	success: "#159E42",
 	danger: "#FF3131",
 	warning: "#ffb02c",
@@ -15,8 +15,26 @@ export const COLORS = {
 	label: "#8A8A8A",
 	backgroundColor: "#fff",
 	black: "#000",
-	
-	//light theme
+	blue: "#007BFF",
+	blueLight: "rgba(0,123,255,0.15)",
+	red: "#DC3545",
+	redLight: "rgba(220,53,69,0.15)",
+	yellow: "#FFC107",
+	yellowLight: "rgba(255,193,7,0.15)",
+	Cobaltblue :'#0047AB',
+	gray: "#6C757D",
+	grayLight: "rgba(108,117,125,0.15)",
+	orange: "#FFA500",
+	orangeLight: "rgba(255,165,0,0.15)",
+	purple: "#9370DB",
+	purpleLight: "rgba(147,112,219,0.15)",
+	green: "#32CD32",
+	greenLight: "rgba(50,205,50,0.15)",
+	pink: "#FF69B4",
+	pinkLight: "rgba(255,105,180,0.15)",
+	teal: "#20B2AA",
+	tealLight: "rgba(32,178,170,0.15)",
+	border:'#ddd',
 	card : "#fff",
 	background : "#ECF2F8",
 	text : "#7D899D",
@@ -24,7 +42,10 @@ export const COLORS = {
 	borderColor : "#ECF2F8",
 	input : "rgba(0,0,0,.03)",
 	inputborder:"#C1CDD9",
-	
+  secondaryText: '#555555',
+  cardBackground: '#F9F9FF',
+  shadow: '#000000',
+  overlay: 'rgba(0,0,0,0.5)',
 	//dark theme
 	darkCard : "rgba(255,255,255,.05)",
 	darkBackground : "rgba(0,3,3,.9)",

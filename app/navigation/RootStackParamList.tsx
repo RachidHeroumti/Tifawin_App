@@ -20,4 +20,13 @@ export type RootStackParamList = {
   Buttons: undefined;
   Badges: undefined;
   Headers: undefined;
+  Cooperative:undefined;
+  Article:undefined;
+  Profile:undefined;
+  EditCoopertive:undefined;
+  EditArticles:undefined;
+  Resultat:undefined;
+  AddCooperative:undefined;
+  Questions:undefined;
+  FirstPage :undefined;
 };
